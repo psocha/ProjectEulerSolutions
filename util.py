@@ -10,3 +10,10 @@ def is_prime(num):
             return False
     return True
 
+def proper_divisor_sum(num):
+    div_sum = 0
+    for i in range(1, num):
+        if num % i == 0:
+            div_sum += i
+    return div_sum
+
